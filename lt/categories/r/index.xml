@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Duomenų tvirtovė</title>
+    <link>/blog/lt/categories/r/</link>
+    <description>Recent content in R on Duomenų tvirtovė</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Vilmantas Gėgžna</copyright>
+    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="/blog/lt/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>„Word“ lentelių kūrimas naudojant „R“</title>
+      <link>/blog/lt/2018/06/15/word-tables-with-r/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/lt/2018/06/15/word-tables-with-r/</guid>
+      <description>&lt;link href=&#34;/blog/rmarkdown-libs/tabwid/tabwid.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/blog/rmarkdown-libs/tabwid/tabwid.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Programa „R“ yra galingas įrankis, skirtas atlikti statistinę duomenų analizę. Šiame straipsnyje pademonstruosiu vieną būdą, kaip „R“ analizės rezultatus, pateiktus kaip „R“ &lt;code&gt;data.frame&lt;/code&gt; klasės lentelę, išsaugoti „Microsoft Word“ lentelės pavidalu. Saugodami automatiškai ne tik sutaupysite laiko, bet ir išvengsite klaidų, kurių galėtų atsirasti rezultatus perrašant rankomis.&lt;/p&gt;
+&lt;p&gt;Straipsnyje pirmiausia paaiškinsiu atskirus kodo elementus, o pačiame gale rasite visą programos kodą, kuris be problemų veiks „Windows“ sistemoje. Tad pradėkime!&lt;/p&gt;
+&lt;div id=&#34;a.-reikiami-r-paketai&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;A. Reikiami „R“ paketai&lt;/h1&gt;
+&lt;p&gt;Šiam darbui naudosime kelis „R“ paketus. Pirma, &lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;&lt;strong&gt;&lt;em&gt;tidyverse&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; šeimos paketų funkcijomis sukursime statistinę suvestinę, kuri bus &lt;code class=&#34;r&#34;&gt;data.frame&lt;/code&gt; klasės lentelė. Antra, &lt;a href=&#34;https://davidgohel.github.io/flextable/&#34;&gt;&lt;strong&gt;&lt;em&gt;flextable&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; paketas bus reikalingas lentelę paversti į tokį formatą, kurį galima įrašyti į „Word“ dokumentą. Galiausiai paketo &lt;a href=&#34;https://davidgohel.github.io/officer/&#34;&gt;&lt;strong&gt;&lt;em&gt;officer&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; funkcijomis sukursime naują „Word“ dokumentą, į jį įkelsime lentelę ir, galiausiai, dokumentą išsaugosime.&lt;/p&gt;
+&lt;div id=&#34;a.1.-paketu-diegimas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;A.1. Paketų diegimas&lt;/h2&gt;
+&lt;p&gt;Jei šių paketų dar neturite, juos turėtumėte atsisiųsti iš saugyklos &lt;a href=&#34;https://cran.r-project.org/&#34;&gt;CRAN&lt;/a&gt; naudodami funkciją &lt;code class=&#34;r&#34;&gt;install.packages()&lt;/code&gt;. Tai tereikia padaryti vieną kartą.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Paketų diegimas iš saugyklos CRAN
+install.packages(c(&amp;quot;tidyverse&amp;quot;, &amp;quot;flextable&amp;quot;, &amp;quot;officer&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;a.2.-paketu-uzkrovimas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;A.2. Paketų užkrovimas&lt;/h2&gt;
+&lt;p&gt;Kai paketai jau mūsų kompiuteryje – juos užsikraukime, kad galėtume naudoti reikiamas funkcijas.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Paketų užkrovimas
+library(tidyverse)
+library(flextable)
+library(officer)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;b.-nustatymai-lokale&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;B. Nustatymai: lokalė&lt;/h1&gt;
+&lt;p&gt;Mūsų lentelėje, kurią išsaugosime, bus lietuviškų raidžių. Tad norėdami, kad jos būtų užrašytos teisingai, nustatome taip vadinamą lietuviškąją lokalę:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Lokalės keitimas Windows sistemai
+Sys.setlocale(locale = &amp;quot;Lithuanian&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Lokalės keitimas daugumai Linux ir Mac OS sistemų
+Sys.setlocale(locale = &amp;quot;lt_LT.UTF-8&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#  Lokalės keitimas kai kurioms Linux versijoms
+Sys.setlocale(locale = &amp;quot;lt_LT.utf8&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jei tiksliai nežinote, kuris formatas tinka jūsų sistemai, įrašykite &lt;code class=&#34;r&#34;&gt;Sys.getlocale()&lt;/code&gt; ir pagal pavyzdį pasirinkite savo kompiuteriui tinkamą lokalės nustatymo būdą. Daugiau apie lokalių nustatymą galite skaityti „R“ &lt;a href=&#34;https://stat.ethz.ch/R-manual/R-patched/library/base/html/locales.html&#34; target=&#34;_blank&#34;&gt;dokumentacijoje&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;c.-duomenys&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;C. Duomenys&lt;/h1&gt;
+&lt;p&gt;Laikas įsikelti duomenis. Iliustracijai naudosime duomenų lentelę „PlantGrowth“ iš paketo &lt;strong&gt;&lt;em&gt;datasets&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Duomenų įkėlimas
+data(&amp;quot;PlantGrowth&amp;quot;, package = &amp;quot;datasets&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Patyrinėkime, kaip šie duomenys atrodo – atspausdinkime
+kelias pirmąsias eilutės.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Pirmosios eilutės
+head(PlantGrowth)
+##   weight group
+## 1   4.17  ctrl
+## 2   5.58  ctrl
+## 3   5.18  ctrl
+## 4   6.11  ctrl
+## 5   4.50  ctrl
+## 6   4.61  ctrl&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bei duomenų lentelės struktūrą.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Duomenų lentelės struktūra
+glimpse(PlantGrowth)
+## Observations: 30
+## Variables: 2
+## $ weight &amp;lt;dbl&amp;gt; 4.17, 5.58, 5.18, 6.11, 4.50, 4.61, 5.17, 4.53, 5.33, 5...
+## $ group  &amp;lt;fct&amp;gt; ctrl, ctrl, ctrl, ctrl, ctrl, ctrl, ctrl, ctrl, ctrl, c...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Čia matome eilučių („Observations“) ir stulpelių („Variables“) skaičių, stulpelių pavadinimus (jie rašomi po dolerio ženklo „$“), stulpeliuose esančių duomenų klases (tiksliau, sutrumpintus jų pavadinimus trikampiuose skliaustuose) bei kelias pirmąsias reikšmes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;d.-suvestines-kurimas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;D. Suvestinės kūrimas&lt;/h1&gt;
+&lt;p&gt;Toliau sudarysime duomenų suvestinę, kuri bus &lt;code&gt;data.frame&lt;/code&gt; klasės lentelė. Šiame pavyzdyje kiekvienai iš grupių apskaičiuosime grupės dydį, svorio (kintamojo &lt;code class=&#34;r&#34;&gt;weight&lt;/code&gt;) vidurkį ir standartinį nuokrypį naudodami paketo &lt;strong&gt;&lt;em&gt;dplyr&lt;/em&gt;&lt;/strong&gt; funkcijas &lt;code class=&#34;r&#34;&gt;group_by()&lt;/code&gt; ir &lt;code class=&#34;r&#34;&gt;summarize()&lt;/code&gt;. Funkcija &lt;code class=&#34;r&#34;&gt;rename()&lt;/code&gt; pervardinsime stulpelį &lt;code&gt;group&lt;/code&gt; į &lt;code&gt;Grupės pavadinimas&lt;/code&gt; – taip visi stulpeliai turės lietuviškus pavadinimus.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Suvestinės skaičiavimas
+suvestine &amp;lt;- 
+    PlantGrowth %&amp;gt;% 
+    group_by(group) %&amp;gt;%
+    summarize(&amp;quot;Grupės dydis&amp;quot; = n(),
+              &amp;quot;Svorio vidurkis&amp;quot; = mean(weight),
+              &amp;quot;Standartinis nuokrypis&amp;quot; = sd(weight))   %&amp;gt;% 
+    rename(&amp;quot;Grupės pavadinimas&amp;quot; = group)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ši suvestinė atspausdinta žemiau (jei toks pateikimas atrodo per daug techniškas, tada pažiūrėkite, kaip ta pati lentelė pateikta sekančiame skyriuje). Pastebėkite, kad, grupės &lt;em&gt;ctrl&lt;/em&gt; dydis yra 10, vidurkis – 5,03, standartinis nuokrypis – 0,58.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;suvestine
+## # A tibble: 3 x 4
+##   `Grupės pavadinima~ `Grupės dydis` `Svorio vidurki~ `Standartinis nuokr~
+##   &amp;lt;fct&amp;gt;                        &amp;lt;int&amp;gt;            &amp;lt;dbl&amp;gt;                &amp;lt;dbl&amp;gt;
+## 1 ctrl                            10             5.03                0.583
+## 2 trt1                            10             4.66                0.794
+## 3 trt2                            10             5.53                0.443&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Taip pat pastebėkite, kad lentelės klasė yra &lt;code class=&#34;r&#34;&gt;data.frame&lt;/code&gt; (tai rodo paskutinis pavadinimas):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Objekto klasė
+class(suvestine)
+## [1] &amp;quot;tbl_df&amp;quot;     &amp;quot;tbl&amp;quot;        &amp;quot;data.frame&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jei turite suvestinę, kuri nėra &lt;code&gt;data.frame&lt;/code&gt;, tada toliau aprašytas būdas neveiks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;e.-lenteles-parengimas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;E. Lentelės parengimas&lt;/h1&gt;
+&lt;p&gt;Prieš saugant į „Word“, lentelę reikia paruošti. Šiam tikslui naudojama funkcija &lt;code class=&#34;r&#34;&gt;regulartable()&lt;/code&gt; („įprasta lentelė“) iš paketo &lt;strong&gt;&lt;em&gt;flextable&lt;/em&gt;&lt;/strong&gt;. Papildomai galima naudoti funkciją &lt;code class=&#34;r&#34;&gt;autofit()&lt;/code&gt;, kuri optimizuoja lentelės dydį (eilučių aukštį ir stulpelių plotį).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;suvestine_issaugojimui &amp;lt;- suvestine %&amp;gt;% regulartable() %&amp;gt;% autofit()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Parengta lentelė programoje „R“ gali būti atspausdinama peržiūros lange ir atrodo šitaip:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;suvestine_issaugojimui&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;tabwid&#34;&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;td style=&#34;height:22px;width:104px;border-bottom: 2.00pt solid rgba(0,0,0,1.00);border-top: 2.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;Grupės pavadinimas&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&#34;height:22px;width:71px;border-bottom: 2.00pt solid rgba(0,0,0,1.00);border-top: 2.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;Grupės dydis&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&#34;height:22px;width:78px;border-bottom: 2.00pt solid rgba(0,0,0,1.00);border-top: 2.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;Svorio vidurkis&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&#34;height:22px;width:111px;border-bottom: 2.00pt solid rgba(0,0,0,1.00);border-top: 2.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;Standartinis nuokrypis&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;height:20px;width:27px;border-bottom: 1.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;ctrl&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&#34;height:20px;width:24px;border-bottom: 1.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;10&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&#34;height:20px;width:38px;border-bottom: 1.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;5.032&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&#34;height:20px;width:38px;border-bottom: 1.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;0.583&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#34;height:20px;width:27px;border-bottom: 1.00pt solid rgba(0,0,0,1.00);border-top: 1.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;trt1&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&#34;height:20px;width:24px;border-bottom: 1.00pt solid rgba(0,0,0,1.00);border-top: 1.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;10&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&#34;height:20px;width:38px;border-bottom: 1.00pt solid rgba(0,0,0,1.00);border-top: 1.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;4.661&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&#34;height:20px;width:38px;border-bottom: 1.00pt solid rgba(0,0,0,1.00);border-top: 1.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;0.794&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#34;height:20px;width:27px;border-bottom: 2.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;trt2&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&#34;height:20px;width:24px;border-bottom: 2.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;10&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&#34;height:20px;width:38px;border-bottom: 2.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;5.526&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&#34;height:20px;width:38px;border-bottom: 2.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);background-color:transparent;margin-top:0pt;margin-bottom:0pt;margin-left:0pt;margin-right:0pt;vertical-align:middle;&#34;&gt;&lt;p style=&#34;margin:0pt;text-align:right;border-bottom: 0.00pt solid rgba(0,0,0,1.00);border-top: 0.00pt solid rgba(0,0,0,1.00);border-left: 0.00pt solid rgba(0,0,0,1.00);border-right: 0.00pt solid rgba(0,0,0,1.00);padding-top:2pt;padding-bottom:2pt;padding-left:2pt;padding-right:2pt;background-color:transparent;&#34;&gt;&lt;span style=&#34;font-family:&#39;Arial&#39;;color:rgba(0,0,0,1.00);font-size:10px;font-style:normal;font-weight:normal;text-decoration:none;background-color:transparent;&#34;&gt;0.443&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;f.-lenteles-issaugojimas-i-word&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;F. Lentelės išsaugojimas į „Word“&lt;/h1&gt;
+&lt;p&gt;Toliau naudodami funkciją &lt;code class=&#34;r&#34;&gt;read_docx()&lt;/code&gt; (iš paketo &lt;strong&gt;&lt;em&gt;officer&lt;/em&gt;&lt;/strong&gt;) pradedame kurti naują „Word“ dokumentą. Funkcija &lt;code class=&#34;r&#34;&gt;body_add_flextable()&lt;/code&gt; prideda mūsų lentelę į šį dokumentą, o &lt;code class=&#34;r&#34;&gt;print()&lt;/code&gt; išsaugo „Word“ dokumentą kietajame diske (man keista, kad &lt;code class=&#34;r&#34;&gt;print()&lt;/code&gt; naudojama dokumentą išsaugoti, bet toks buvo paketų autorių pasirinkimas). Pastarosios funkcijos skliaustuose reikia nurodyti norimą dokumento pavadinimą, kurio plėtinys (paskutinės raidės po taško) būtų „.docx“, kaip šiame pavyzdyje:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dokumento_pavadinimas &amp;lt;-
+    read_docx() %&amp;gt;% 
+    body_add_flextable(suvestine_issaugojimui) %&amp;gt;% 
+    print(target = &amp;quot;dokumentas_su_suvestine.docx&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jei dokumentas išsaugomas, programa „R“ parašo aplanko bei paties dokumento pavadinimą. Tuo galite įsitikinti atspausdinę kintamąjį &lt;code class=&#34;r&#34;&gt;dokumento_pavadinimas&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;font color = &#34;blue&#34;&gt;&lt;strong&gt;Pastaba.&lt;/strong&gt;&lt;/font&gt; Jei parašomas įspėjimas, kad dokumento nepavyksta išsaugoti, patikrinkite, ar nesate atidarę „Word“ dokumento jūsų pasirinktu pavadinimu (šiuo atveju „dokumentas_su_suvestine.docx“).&lt;/p&gt;
+&lt;p&gt;&lt;font color = &#34;darkred&#34;&gt;&lt;strong&gt;Įspėjimas!&lt;/strong&gt;&lt;/font&gt; Jei jūsų pasirinktame aplanke jau yra „Word“ dokumentas tokiu pavadinimu, tai šis kodas be įspėjimo ištrins esantį dokumentą ir jo vietoje įrašys naująjį. Tad kai atidarysite „Word“ dokumentą ir redaguosite lentelę, rekomenduoju dokumentą su pakeitimais pervardinti.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;g.-word-dokumento-atidarymas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;G. „Word“ dokumento atidarymas&lt;/h1&gt;
+&lt;p&gt;Išsaugoję lentelę atsidarykite „Word“ ir peržiūrėkite ją. Jei esate sistemos „Windows“ naudotojai, „Word“ dokumentą galite atidaryti naudodami tokį kodą:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Dokumento atidarymas (tik Windows vartotojams)
+shell.exec(dokumento_pavadinimas)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Kai kuriose sistemose tai padaryti galite naudodami funkciją &lt;code class=&#34;r&#34;&gt;browseURL()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Linux ir kitoms sistemoms
+browseURL(dokumento_pavadinimas)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Rezultatas „Word“ dokumente atrodys šitaip:&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:fig-lentele&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/blog/post/2018-06-15-word-tables-with-r.lt_files/fig-01-lentele.png&#34; alt=&#34;Lentelė „Word“ dokumente.  &#34; width=&#34;500&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Lentelė „Word“ dokumente.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visas-programos-kodas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Visas programos kodas&lt;/h1&gt;
+&lt;p&gt;Pabaigai pateikiu visą programos kodą, skirtą „Windows“ vartotojams: jį nusikopijuokite, reikiamas vietas pakeiskite ir naudokite pagal savo poreikius.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# A. Paketų užkrovimas
+library(tidyverse)
+library(flextable)
+library(officer)
+
+# B. Analizės nustatymai
+# (Lokalės keitimas Windows sistemai)
+Sys.setlocale(locale = &amp;quot;Lithuanian&amp;quot;)
+
+# C. Duomenų įkėlimas
+data(&amp;quot;PlantGrowth&amp;quot;, package = &amp;quot;datasets&amp;quot;)
+
+# D. Statistinė duomenų suvestinė
+suvestine &amp;lt;- 
+    PlantGrowth %&amp;gt;% 
+    group_by(group) %&amp;gt;%
+    summarize(&amp;quot;Grupės dydis&amp;quot; = n(),
+              &amp;quot;Svorio vidurkis&amp;quot; = mean(weight),
+              &amp;quot;Standartinis nuokrypis&amp;quot; = sd(weight)) %&amp;gt;% 
+    rename(&amp;quot;Grupės pavadinimas&amp;quot; = group)
+
+# E. Lentelės parengimas išsaugoti
+suvestine_issaugojimui &amp;lt;- suvestine %&amp;gt;% regulartable() %&amp;gt;% autofit()
+
+# F. Lentelės išsaugojimas į „Word“
+dokumento_pavadinimas &amp;lt;-
+    read_docx() %&amp;gt;% 
+    body_add_flextable(suvestine_issaugojimui) %&amp;gt;% 
+    print(target = &amp;quot;dokumentas_su_suvestine.docx&amp;quot;)
+
+# G. Dokumento atidarymas programiškai (tik Windows vartotojams)
+shell.exec(dokumento_pavadinimas)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sėkmės!&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
