@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Duomenų tvirtovė</title>
+    <link>/blog/lt/tags/</link>
+    <description>Recent content in Tags on Duomenų tvirtovė</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Vilmantas Gėgžna</copyright>
+    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="/blog/lt/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R</title>
+      <link>/blog/lt/tags/r/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/lt/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paketas Officer</title>
+      <link>/blog/lt/tags/paketas-officer/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/lt/tags/paketas-officer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paketas Flextable</title>
+      <link>/blog/lt/tags/paketas-flextable/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/lt/tags/paketas-flextable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ms Word</title>
+      <link>/blog/lt/tags/ms-word/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/lt/tags/ms-word/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
