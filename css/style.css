@@ -279,6 +279,7 @@ code {
   text-transform: uppercase;
 }
 
+
 /* #profile .inner, */
 #header,
 .article-inner,
@@ -826,7 +827,7 @@ code {
   text-align: center;
 }
 #profile .inner .base-info #title {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 #profile .inner .base-info #name {
   font-size: 20px;
