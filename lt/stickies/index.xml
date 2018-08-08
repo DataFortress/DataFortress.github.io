@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stickies on Duomenų tvirtovė</title>
-    <link>/blog/lt/stickies/</link>
+    <link>/lt/stickies/</link>
     <description>Recent content in Stickies on Duomenų tvirtovė</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Vilmantas Gėgžna</copyright>
     
-        <atom:link href="/blog/lt/stickies/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/lt/stickies/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

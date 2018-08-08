@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Duomenų tvirtovė</title>
-    <link>/blog/lt/categories/</link>
+    <link>/lt/categories/</link>
     <description>Recent content in Categories on Duomenų tvirtovė</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Vilmantas Gėgžna</copyright>
     
-        <atom:link href="/blog/lt/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/lt/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>R</title>
-      <link>/blog/lt/categories/r/</link>
+      <link>/lt/categories/r/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lt/categories/r/</guid>
+      <guid>/lt/categories/r/</guid>
       <description></description>
     </item>
     

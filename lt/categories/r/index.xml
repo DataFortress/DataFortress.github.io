@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Duomenų tvirtovė</title>
-    <link>/blog/lt/categories/r/</link>
+    <link>/lt/categories/r/</link>
     <description>Recent content in R on Duomenų tvirtovė</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Vilmantas Gėgžna</copyright>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/blog/lt/categories/r/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/lt/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>„Word“ lentelių kūrimas naudojant „R“</title>
-      <link>/blog/lt/2018/06/15/word-tables-with-r/</link>
+      <link>/lt/2018/06/15/word-tables-with-r/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lt/2018/06/15/word-tables-with-r/</guid>
-      <description>&lt;link href=&#34;/blog/rmarkdown-libs/tabwid/tabwid.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/blog/rmarkdown-libs/tabwid/tabwid.js&#34;&gt;&lt;/script&gt;
+      <guid>/lt/2018/06/15/word-tables-with-r/</guid>
+      <description>&lt;link href=&#34;/rmarkdown-libs/tabwid/tabwid.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/tabwid/tabwid.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Programa „R“ yra galingas įrankis, skirtas atlikti statistinę duomenų analizę. Šiame straipsnyje pademonstruosiu vieną būdą, kaip „R“ analizės rezultatus, pateiktus kaip „R“ &lt;code&gt;data.frame&lt;/code&gt; klasės lentelę, išsaugoti „Microsoft Word“ lentelės pavidalu. Saugodami automatiškai ne tik sutaupysite laiko, bet ir išvengsite klaidų, kurių galėtų atsirasti rezultatus perrašant rankomis.&lt;/p&gt;
@@ -131,7 +131,7 @@ shell.exec(dokumento_pavadinimas)&lt;/code&gt;&lt;/pre&gt;
 browseURL(dokumento_pavadinimas)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Rezultatas „Word“ dokumente atrodys šitaip:&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:fig-lentele&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/blog/post/2018-06-15-word-tables-with-r.lt_files/fig-01-lentele.png&#34; alt=&#34;Lentelė „Word“ dokumente.  &#34; width=&#34;500&#34; /&gt;
+&lt;img src=&#34;/post/2018-06-15-word-tables-with-r.lt_files/fig-01-lentele.png&#34; alt=&#34;Lentelė „Word“ dokumente.  &#34; width=&#34;500&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: Lentelė „Word“ dokumente.
 &lt;/p&gt;

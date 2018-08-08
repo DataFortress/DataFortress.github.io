@@ -3,191 +3,191 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/2018/06/15/word-tables-with-r/</loc>
+    <loc>/2018/06/15/word-tables-with-r/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/blog/lt/2018/06/15/word-tables-with-r/"
+                href="/lt/2018/06/15/word-tables-with-r/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/2018/06/15/word-tables-with-r/"
+                href="/2018/06/15/word-tables-with-r/"
                 />
   </url>
   
   <url>
-    <loc>/blog/archive/</loc>
+    <loc>/archive/</loc>
     <lastmod>2017-05-19T21:49:20+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/blog/lt/archive/"
+                href="/lt/archive/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/archive/"
+                href="/archive/"
                 />
   </url>
   
   <url>
-    <loc>/blog/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/blog/lt/categories/"
+                href="/lt/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/categories/"
+                href="/categories/"
                 />
   </url>
   
   <url>
-    <loc>/blog/</loc>
+    <loc>/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/blog/lt/"
+                href="/lt/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/"
+                href="/"
                 />
   </url>
   
   <url>
-    <loc>/blog/level/for-begginers/</loc>
+    <loc>/level/for-begginers/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/blog/level/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="lt"
-                href="/blog/lt/level/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/blog/level/"
-                />
-  </url>
-  
-  <url>
-    <loc>/blog/tags/ms-word/</loc>
+    <loc>/level/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/blog/lt/tags/ms-word/"
+                href="/lt/level/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/tags/ms-word/"
+                href="/level/"
                 />
   </url>
   
   <url>
-    <loc>/blog/tags/package-flextable/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/package-officer/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/blog/post/</loc>
+    <loc>/tags/ms-word/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/blog/lt/post/"
+                href="/lt/tags/ms-word/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/post/"
+                href="/tags/ms-word/"
                 />
   </url>
   
   <url>
-    <loc>/blog/tags/r/</loc>
+    <loc>/tags/package-flextable/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/package-officer/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/blog/lt/tags/r/"
+                href="/lt/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/tags/r/"
+                href="/post/"
                 />
   </url>
   
   <url>
-    <loc>/blog/categories/r/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/blog/lt/categories/r/"
+                href="/lt/categories/r/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/categories/r/"
+                href="/categories/r/"
                 />
   </url>
   
   <url>
-    <loc>/blog/stickies/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="lt"
-                href="/blog/lt/stickies/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/blog/stickies/"
-                />
-  </url>
-  
-  <url>
-    <loc>/blog/tags/</loc>
+    <loc>/tags/r/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/blog/lt/tags/"
+                href="/lt/tags/r/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/tags/"
+                href="/tags/r/"
+                />
+  </url>
+  
+  <url>
+    <loc>/stickies/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="/lt/stickies/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/stickies/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="/lt/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
                 />
   </url>
   

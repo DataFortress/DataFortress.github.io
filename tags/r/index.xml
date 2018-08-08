@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Data Fortress</title>
-    <link>/blog/tags/r/</link>
+    <link>/tags/r/</link>
     <description>Recent content in R on Data Fortress</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Vilmantas Gėgžna</copyright>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/blog/tags/r/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Save R Data Frames as Word Tables</title>
-      <link>/blog/2018/06/15/word-tables-with-r/</link>
+      <link>/2018/06/15/word-tables-with-r/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2018/06/15/word-tables-with-r/</guid>
+      <guid>/2018/06/15/word-tables-with-r/</guid>
       <description>&lt;div id=&#34;summary&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Summary&lt;/h1&gt;
 &lt;p&gt;In this blog post, I demonstrate how to save an R &lt;code&gt;data.frame&lt;/code&gt; as a Microsoft Word table using R packages
