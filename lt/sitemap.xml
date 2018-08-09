@@ -128,22 +128,6 @@
   </url>
   
   <url>
-    <loc>/lt/categories/r/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/r/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="lt"
-                href="/lt/categories/r/"
-                />
-  </url>
-  
-  <url>
     <loc>/lt/tags/r/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -156,6 +140,22 @@
                 rel="alternate"
                 hreflang="lt"
                 href="/lt/tags/r/"
+                />
+  </url>
+  
+  <url>
+    <loc>/lt/categories/r/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/r/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="/lt/categories/r/"
                 />
   </url>
   
