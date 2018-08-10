@@ -389,6 +389,7 @@ code {
 .widget dt {
   font-weight: bold;
 }
+
 #header {
     background: #fff;
     position: fixed;
@@ -396,6 +397,8 @@ code {
     left: 0;
     z-index: 10;
     width: 100%;
+    transition: top 0.5s; /* Transition effect when sliding down (and up) */
+
 }
 #header a,
 #header a:visited {
@@ -409,6 +412,8 @@ code {
 #header a:hover {
   color: #38b7ea;
 }
+
+
 .header-inner #logo,
 .header-inner #logolong,
 #main-nav,
