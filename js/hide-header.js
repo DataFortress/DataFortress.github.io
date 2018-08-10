@@ -7,6 +7,7 @@ window.onscroll = function() {
   
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("header").style.top = "0";
+    document.getElementById("header").style.top = "fixed";
     
   } else {
   	/* Activate, if y offset position is higher than 130 px */
@@ -14,6 +15,11 @@ window.onscroll = function() {
     	document.getElementById("header").style.top = "-150px";
   	}
   }
+  
+  if (window.pageYOffset == 0) {
+    document.getElementById("header").style.top = "fixed";
+  }
+  
   prevScrollpos = currentScrollPos;
 };
 

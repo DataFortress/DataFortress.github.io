@@ -397,7 +397,7 @@ code {
     left: 0;
     z-index: 10;
     width: 100%;
-    transition: top 0.5s; /* Transition effect when sliding down (and up) */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 
 }
 #header a,
