@@ -2314,7 +2314,11 @@ ol.toc {
     display: grid;
 }
 #header .outer .lang-switcher .main-dropdown-menu li {
-    background-color: white;
+    background-color: none;
+}
+#header .outer .lang-switcher .main-dropdown-menu img {
+    padding: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
 }
 #header .lang-switcher img {
     display: block;
