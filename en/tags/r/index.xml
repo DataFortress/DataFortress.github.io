@@ -14,10 +14,10 @@
     
     <item>
       <title>Save R Data Frames as Word Tables</title>
-      <link>/en/2018/06/15/word-tables-with-r/</link>
+      <link>/en/2018/06/word-tables-with-r/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
-      <guid>/en/2018/06/15/word-tables-with-r/</guid>
+      <guid>/en/2018/06/word-tables-with-r/</guid>
       <description>&lt;div id=&#34;summary&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Summary&lt;/h1&gt;
 &lt;p&gt;In this blog post, I demonstrate how to save an R &lt;code&gt;data.frame&lt;/code&gt; as a Microsoft Word table using R packages
