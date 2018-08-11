@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Vilmantas Gėgžna">
-    <meta name="description" content="Tinklaraštis apie duomenų analizę, mašininį mokymasį, programą „R“ bei susijusias temas.">
+    <meta name="description" content="Šiame straipsnyje demonstruoju būdą, kaip „R“ analizės rezultatus, pateiktus kaip „R“ `data.frame` klasės lentelę, išsaugoti „Microsoft Word“ lentelės pavidalu. Saugodami automatiškai ne tik sutaupysite laiko, bet ir išvengsite klaidų, kurių galėtų atsirasti rezultatus perrašant rankomis.">
     
     
     <link rel="canonical" href="/lt/2018/06/15/word-tables-with-r/"/>
@@ -29,9 +29,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <meta property="og:title" content="„Word“ lentelių kūrimas naudojant „R“" />
-<meta property="og:description" content="Programa „R“ yra galingas įrankis, skirtas atlikti statistinę duomenų analizę. Šiame straipsnyje pademonstruosiu vieną būdą, kaip „R“ analizės rezultatus, pateiktus kaip „R“ data.frame klasės lentelę, išsaugoti „Microsoft Word“ lentelės pavidalu. Saugodami automatiškai ne tik sutaupysite laiko, bet ir išvengsite klaidų, kurių galėtų atsirasti rezultatus perrašant rankomis.
-Straipsnyje pirmiausia paaiškinsiu atskirus kodo elementus, o pačiame gale rasite visą programos kodą, kuris be problemų veiks „Windows“ sistemoje. Tad pradėkime!
-A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus." />
+<meta property="og:description" content="Šiame straipsnyje demonstruoju būdą, kaip „R“ analizės rezultatus, pateiktus kaip „R“ `data.frame` klasės lentelę, išsaugoti „Microsoft Word“ lentelės pavidalu. Saugodami automatiškai ne tik sutaupysite laiko, bet ir išvengsite klaidų, kurių galėtų atsirasti rezultatus perrašant rankomis." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/lt/2018/06/15/word-tables-with-r/" />
 
@@ -55,9 +53,7 @@ A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus." />
     
     
 <meta itemprop="name" content="„Word“ lentelių kūrimas naudojant „R“">
-<meta itemprop="description" content="Programa „R“ yra galingas įrankis, skirtas atlikti statistinę duomenų analizę. Šiame straipsnyje pademonstruosiu vieną būdą, kaip „R“ analizės rezultatus, pateiktus kaip „R“ data.frame klasės lentelę, išsaugoti „Microsoft Word“ lentelės pavidalu. Saugodami automatiškai ne tik sutaupysite laiko, bet ir išvengsite klaidų, kurių galėtų atsirasti rezultatus perrašant rankomis.
-Straipsnyje pirmiausia paaiškinsiu atskirus kodo elementus, o pačiame gale rasite visą programos kodą, kuris be problemų veiks „Windows“ sistemoje. Tad pradėkime!
-A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus.">
+<meta itemprop="description" content="Šiame straipsnyje demonstruoju būdą, kaip „R“ analizės rezultatus, pateiktus kaip „R“ `data.frame` klasės lentelę, išsaugoti „Microsoft Word“ lentelės pavidalu. Saugodami automatiškai ne tik sutaupysite laiko, bet ir išvengsite klaidų, kurių galėtų atsirasti rezultatus perrašant rankomis.">
 
 
 <meta itemprop="datePublished" content="2018-06-15T00:00:00&#43;00:00" />
@@ -70,9 +66,7 @@ A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus.">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="„Word“ lentelių kūrimas naudojant „R“"/>
-<meta name="twitter:description" content="Programa „R“ yra galingas įrankis, skirtas atlikti statistinę duomenų analizę. Šiame straipsnyje pademonstruosiu vieną būdą, kaip „R“ analizės rezultatus, pateiktus kaip „R“ data.frame klasės lentelę, išsaugoti „Microsoft Word“ lentelės pavidalu. Saugodami automatiškai ne tik sutaupysite laiko, bet ir išvengsite klaidų, kurių galėtų atsirasti rezultatus perrašant rankomis.
-Straipsnyje pirmiausia paaiškinsiu atskirus kodo elementus, o pačiame gale rasite visą programos kodą, kuris be problemų veiks „Windows“ sistemoje. Tad pradėkime!
-A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus."/>
+<meta name="twitter:description" content="Šiame straipsnyje demonstruoju būdą, kaip „R“ analizės rezultatus, pateiktus kaip „R“ `data.frame` klasės lentelę, išsaugoti „Microsoft Word“ lentelės pavidalu. Saugodami automatiškai ne tik sutaupysite laiko, bet ir išvengsite klaidų, kurių galėtų atsirasti rezultatus perrašant rankomis."/>
 <meta name="twitter:site" content="@GegznaV"/>
 
     
@@ -111,9 +105,7 @@ A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus."/>
         "articleSection" : "post",
         "name" : "„Word“ lentelių kūrimas naudojant „R“",
         "headline" : "„Word“ lentelių kūrimas naudojant „R“",
-        "description" : "Programa „R“ yra galingas įrankis, skirtas atlikti statistinę duomenų analizę. Šiame straipsnyje pademonstruosiu vieną būdą, kaip „R“ analizės rezultatus, pateiktus kaip „R“ data.frame klasės lentelę, išsaugoti „Microsoft Word“ lentelės pavidalu. Saugodami automatiškai ne tik sutaupysite laiko, bet ir išvengsite klaidų, kurių galėtų atsirasti rezultatus perrašant rankomis.
-Straipsnyje pirmiausia paaiškinsiu atskirus kodo elementus, o pačiame gale rasite visą programos kodą, kuris be problemų veiks „Windows“ sistemoje. Tad pradėkime!
-A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus.",
+        "description" : "Šiame straipsnyje demonstruoju būdą, kaip „R“ analizės rezultatus, pateiktus kaip „R“ `data.frame` klasės lentelę, išsaugoti „Microsoft Word“ lentelės pavidalu. Saugodami automatiškai ne tik sutaupysite laiko, bet ir išvengsite klaidų, kurių galėtų atsirasti rezultatus perrašant rankomis.",
         "inLanguage" : "lt",
         "author" : "Vilmantas Gėgžna",
         "creator" : "Vilmantas Gėgžna",
