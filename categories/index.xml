@@ -5,7 +5,8 @@
     <link>/categories/</link>
     <description>Recent content in Categories on Data Fortress</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Vilmantas Gėgžna</copyright>
+    <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
+    <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     
         <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +15,7 @@
       <title>R</title>
       <link>/categories/r/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
-      
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
       <guid>/categories/r/</guid>
       <description></description>
     </item>

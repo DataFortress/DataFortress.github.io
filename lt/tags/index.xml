@@ -5,26 +5,18 @@
     <link>/lt/tags/</link>
     <description>Recent content in Tags on Duomenų tvirtovė</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Vilmantas Gėgžna</copyright>
+    <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
+    <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/lt/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>R</title>
-      <link>/lt/tags/r/</link>
-      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/lt/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Paketas Officer</title>
       <link>/lt/tags/paketas-officer/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
-      
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
       <guid>/lt/tags/paketas-officer/</guid>
       <description></description>
     </item>
@@ -33,7 +25,7 @@
       <title>Paketas Flextable</title>
       <link>/lt/tags/paketas-flextable/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
-      
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
       <guid>/lt/tags/paketas-flextable/</guid>
       <description></description>
     </item>
@@ -42,8 +34,17 @@
       <title>Ms Word</title>
       <link>/lt/tags/ms-word/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
-      
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
       <guid>/lt/tags/ms-word/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Duomenų analizės ir vizualizavimo programa „R“</title>
+      <link>/lt/tags/r/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
+      <guid>/lt/tags/r/</guid>
       <description></description>
     </item>
     

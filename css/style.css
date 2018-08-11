@@ -792,7 +792,7 @@ code {
     max-height: 54px;
   }
 }
-#profile .inner .base-info #sitelogo {
+#profile .inner .base-info #avatarbig {
   display: block;
   margin: 10px auto 20px;
   width: 80%;
@@ -801,7 +801,7 @@ code {
   border-color: #ddd;
 
 }
-#profile.card .inner .base-info #sitelogo {
+#profile.card .inner .base-info #avatarbig {
   display: block;
   margin: 10px auto 20px;
   width: 50%;
@@ -810,7 +810,7 @@ code {
 
 }
 @media screen and (max-width: 600px) {
-  #profile .inner .base-info #sitelogo {
+  #profile .inner .base-info #avatarbig {
     margin: 10px auto 10px;
     width: 70%;
     border-radius: 25%;
@@ -818,7 +818,7 @@ code {
   }
 }
 @media screen and (max-height: 480px) {
-  #profile .inner .base-info #sitelogo {
+  #profile .inner .base-info #avatarbig {
     margin: 10px auto 10px;
     width: 50%;
     border-radius: 25%;

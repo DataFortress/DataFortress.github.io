@@ -8,8 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Vilmantas Gėgžna">
-    
-      <meta name="description" content="Tinklaraštis apie duomenų analizę, mašininį mokymasį, programą „R“ bei susijusias temas.">
+    <meta name="description" content="Tinklaraštis apie duomenų analizę, mašininį mokymasį, programą „R“ bei susijusias temas.">
     
     
     <link rel="canonical" href="/lt/2018/06/15/word-tables-with-r/"/>
@@ -74,6 +73,7 @@ A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus.">
 <meta name="twitter:description" content="Programa „R“ yra galingas įrankis, skirtas atlikti statistinę duomenų analizę. Šiame straipsnyje pademonstruosiu vieną būdą, kaip „R“ analizės rezultatus, pateiktus kaip „R“ data.frame klasės lentelę, išsaugoti „Microsoft Word“ lentelės pavidalu. Saugodami automatiškai ne tik sutaupysite laiko, bet ir išvengsite klaidų, kurių galėtų atsirasti rezultatus perrašant rankomis.
 Straipsnyje pirmiausia paaiškinsiu atskirus kodo elementus, o pačiame gale rasite visą programos kodą, kuris be problemų veiks „Windows“ sistemoje. Tad pradėkime!
 A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus."/>
+<meta name="twitter:site" content="@GegznaV"/>
 
     
 
@@ -105,8 +105,8 @@ A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus."/>
         "@context" : "http://schema.org",
         "@type" : "BlogPosting",
         "mainEntityOfPage": {
-             "@type": "WebPage",
-             "@id": "/"
+           "@type": "WebPage",
+           "@id": "https://datafortress.github.io/lt/2018/06/15/word-tables-with-r/"
         },
         "articleSection" : "post",
         "name" : "„Word“ lentelių kūrimas naudojant „R“",
@@ -115,15 +115,17 @@ A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus."/>
 Straipsnyje pirmiausia paaiškinsiu atskirus kodo elementus, o pačiame gale rasite visą programos kodą, kuris be problemų veiks „Windows“ sistemoje. Tad pradėkime!
 A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus.",
         "inLanguage" : "lt",
-        "author" : "",
-        "creator" : "",
-        "publisher": "",
-        "accountablePerson" : "",
-        "copyrightHolder" : "",
+        "author" : "Vilmantas Gėgžna",
+        "creator" : "Vilmantas Gėgžna",
+        "publisher": "Vilmantas Gėgžna",
+        "accountablePerson" : "Vilmantas Gėgžna",
+        "copyrightHolder" : "Vilmantas Gėgžna",
         "copyrightYear" : "2018",
         "datePublished": "2018-06-15 00:00:00 &#43;0000 UTC",
         "dateModified" : "2018-06-15 00:00:00 &#43;0000 UTC",
-        "url" : "/lt/2018/06/15/word-tables-with-r/",
+        "image" : "/banners/2018-06-15-sq.png"
+        "url" : "https://datafortress.github.io/lt/2018/06/15/word-tables-with-r/",
+        /banners/2018-06-15-sq.png
         "wordCount" : "959",
         "keywords" : [ "R","Paketas „flextable“","Paketas „officer“","MS Word","Blog" ]
     }
@@ -209,17 +211,20 @@ A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus.",
           
         </ul>
       </div>
-            
+    
     <table class="menu outer search-form">
       <tbody>
-          <tr>
+        <tr>
           <td>
-          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
-          <input type="search" name="q" class="search-form-input" placeholder="Search">
-          <input type="hidden" name="sitesearch" value="/lt" />
-          </form>
-        </td>
-      </tr>
+          
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+		  <input type="search" name="q" class="search-form-input" placeholder="Ieškoti">
+		  <button type="submit" class="search-form-submit"></button>
+		  <input type="hidden" name="sitesearch" value="https://datafortress.github.io" />
+		</form> 
+
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>  
@@ -235,7 +240,7 @@ A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus.",
     <div class="base-info profile-block">
       
       <a href="/lt" title="Duomenų tvirtovė">
-        <img id="sitelogo" src="/assets/VG-Ireland-300x300.jpg">
+        <img id="avatarbig" src="/assets/VG-Ireland-300x300.jpg">
       </a>
       
       <h2 id="name">Vilmantas Gėgžna</h2>
@@ -270,7 +275,12 @@ A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus.",
 
 
 
-<td><a href="//youtube.com/channel/UCmm7E2ZjTeaP2ycIAIttcJQ" target="_blank" title="YouTube"><i class="fa fa-youtube"></i></a></td>
+
+
+<td><a href="//youtube.com/channel/UCmm7E2ZjTeaP2ycIAIttcJQ" target="_blank" title="YouTube [LT]"><i class="fa fa-youtube"></i></a></td>
+
+
+
 
 
 
@@ -302,6 +312,8 @@ A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus.",
 
 
 
+<td><a href="//twitter.com/GegznaV" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
 
 
 
@@ -327,18 +339,19 @@ A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus.",
 
    	
     	<aside id="sidebar">
-    <div class="widget-wrap">
-  <div class="widget">
-    <ul id="search-form-wrap">
-      <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
-          <input type="search" name="q" class="search-form-input" placeholder="Ieškoti">
-          <button type="submit" class="search-form-submit">
-          </button>
-          <input type="hidden" name="sitesearch" value="/lt" />
-      </form>
-     </ul>
-  </div>
-</div>
+    <div class="widget-wrap"> <div class="widget">
+  <ul id="search-form-wrap">
+  
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+		  <input type="search" name="q" class="search-form-input" placeholder="Ieškoti">
+		  <button type="submit" class="search-form-submit"></button>
+		  <input type="hidden" name="sitesearch" value="https://datafortress.github.io" />
+		</form> 
+
+  
+  </ul>
+</div> </div>
+
 
     
 <div class="widget-wrap">
@@ -484,6 +497,11 @@ A. Reikiami „R“ paketaiŠiam darbui naudosime kelis „R“ paketus.",
     </div>
 
     <section id="main">
+    
+
+    
+    Vilmantas Gėgžna a
+    
     
     <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
     <div class="article-inner">
@@ -754,7 +772,7 @@ shell.exec(dokumento_pavadinimas)</code></pre>
 
 
 <li>
-  <a href="//twitter.com/share?url=https%3a%2f%2fdatafortress.github.io%2flt%2f2018%2f06%2f15%2fword-tables-with-r%2f&text=%e2%80%9eWord%e2%80%9c%20lenteli%c5%b3%20k%c5%abrimas%20naudojant%20%e2%80%9eR%e2%80%9c&via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=https%3a%2f%2fdatafortress.github.io%2flt%2f2018%2f06%2f15%2fword-tables-with-r%2f&text=%e2%80%9eWord%e2%80%9c%20lenteli%c5%b3%20k%c5%abrimas%20naudojant%20%e2%80%9eR%e2%80%9c&via=GegznaV" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -781,8 +799,10 @@ shell.exec(dokumento_pavadinimas)</code></pre>
 </li>
 
 
+
+
 <li>
-  <a href="mailto:?subject=Check out this post by Vilmantas%20G%c4%97g%c5%bena&body=%e2%80%9eWord%e2%80%9c%20lenteli%c5%b3%20k%c5%abrimas%20naudojant%20%e2%80%9eR%e2%80%9c
+  <a href="mailto:?subject=Per%c5%bevek%20%c5%a1%c4%af%20straipsn%c4%af&body=Vilmantas%20G%c4%97g%c5%bena. %e2%80%9eWord%e2%80%9c%20lenteli%c5%b3%20k%c5%abrimas%20naudojant%20%e2%80%9eR%e2%80%9c %0D%0A
   https%3a%2f%2fdatafortress.github.io%2flt%2f2018%2f06%2f15%2fword-tables-with-r%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
@@ -855,15 +875,14 @@ shell.exec(dokumento_pavadinimas)</code></pre>
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2018
-      Vilmantas Gėgžna
+      &copy; 2018, Vilmantas Gėgžna
     </div>
   </div>
 </footer>
 
 <script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script src="/js/hide-top-navbar.js"></script>
 <script src="/js/script.js"></script>
-<script src="/js/hide-header.js"></script>
 
 
 
@@ -875,12 +894,12 @@ shell.exec(dokumento_pavadinimas)</code></pre>
 
 <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
 
-<script src="/js/hljs-lang-r.js" ></script>
+<script src="/js/highlight-r-code.js" ></script>
 
 
 <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
 
-<script src="/js/hljs-lang-r.js" ></script>
+<script src="/js/highlight-r-code.js" ></script>
 
 
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>

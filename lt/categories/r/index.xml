@@ -5,7 +5,8 @@
     <link>/lt/categories/r/</link>
     <description>Recent content in R on Duomenų tvirtovė</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Vilmantas Gėgžna</copyright>
+    <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
+    <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/lt/categories/r/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +16,7 @@
       <title>„Word“ lentelių kūrimas naudojant „R“</title>
       <link>/lt/2018/06/15/word-tables-with-r/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
-      
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
       <guid>/lt/2018/06/15/word-tables-with-r/</guid>
       <description>&lt;link href=&#34;/rmarkdown-libs/tabwid/tabwid.css&#34; rel=&#34;stylesheet&#34; /&gt;
 &lt;script src=&#34;/rmarkdown-libs/tabwid/tabwid.js&#34;&gt;&lt;/script&gt;

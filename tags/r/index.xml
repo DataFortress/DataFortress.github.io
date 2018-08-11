@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Data Fortress</title>
+    <title>Program R for Statistical Computing and Data Visualization on Data Fortress</title>
     <link>/tags/r/</link>
-    <description>Recent content in R on Data Fortress</description>
+    <description>Recent content in Program R for Statistical Computing and Data Visualization on Data Fortress</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Vilmantas Gėgžna</copyright>
+    <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
+    <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +16,7 @@
       <title>Save R Data Frames as Word Tables</title>
       <link>/2018/06/15/word-tables-with-r/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
-      
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
       <guid>/2018/06/15/word-tables-with-r/</guid>
       <description>&lt;div id=&#34;summary&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Summary&lt;/h1&gt;

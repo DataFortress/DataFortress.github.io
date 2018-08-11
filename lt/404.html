@@ -8,8 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Vilmantas Gėgžna">
-    
-      <meta name="description" content="Tinklaraštis apie duomenų analizę, mašininį mokymasį, programą „R“ bei susijusias temas.">
+    <meta name="description" content="Tinklaraštis apie duomenų analizę, mašininį mokymasį, programą „R“ bei susijusias temas.">
     
     
     <link rel="canonical" href="/lt/"/>
@@ -57,6 +56,7 @@
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="404 Page not found"/>
 <meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@GegznaV"/>
 
     
 
@@ -88,23 +88,25 @@
         "@context" : "http://schema.org",
         "@type" : "BlogPosting",
         "mainEntityOfPage": {
-             "@type": "WebPage",
-             "@id": "/"
+           "@type": "WebPage",
+           "@id": "https://datafortress.github.io"
         },
         "articleSection" : "",
         "name" : "404 Page not found",
         "headline" : "404 Page not found",
         "description" : "",
         "inLanguage" : "lt",
-        "author" : "",
-        "creator" : "",
-        "publisher": "",
-        "accountablePerson" : "",
-        "copyrightHolder" : "",
+        "author" : "Vilmantas Gėgžna",
+        "creator" : "Vilmantas Gėgžna",
+        "publisher": "Vilmantas Gėgžna",
+        "accountablePerson" : "Vilmantas Gėgžna",
+        "copyrightHolder" : "Vilmantas Gėgžna",
         "copyrightYear" : "0001",
         "datePublished": "0001-01-01 00:00:00 &#43;0000 UTC",
         "dateModified" : "0001-01-01 00:00:00 &#43;0000 UTC",
-        "url" : "",
+        "image" : "/assets/logo.png"
+        "url" : "https://datafortress.github.io",
+        /Page%28%22404%20Page%20not%20found%22%29
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
     }
@@ -195,17 +197,20 @@
           
         </ul>
       </div>
-            
+    
     <table class="menu outer search-form">
       <tbody>
-          <tr>
+        <tr>
           <td>
-          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
-          <input type="search" name="q" class="search-form-input" placeholder="Search">
-          <input type="hidden" name="sitesearch" value="/lt" />
-          </form>
-        </td>
-      </tr>
+          
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+		  <input type="search" name="q" class="search-form-input" placeholder="Ieškoti">
+		  <button type="submit" class="search-form-submit"></button>
+		  <input type="hidden" name="sitesearch" value="https://datafortress.github.io" />
+		</form> 
+
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>  
@@ -221,7 +226,7 @@
     <div class="base-info profile-block">
       
       <a href="/lt" title="Duomenų tvirtovė">
-        <img id="sitelogo" src="/assets/VG-Ireland-300x300.jpg">
+        <img id="avatarbig" src="/assets/VG-Ireland-300x300.jpg">
       </a>
       
       <h2 id="name">Vilmantas Gėgžna</h2>
@@ -256,7 +261,12 @@
 
 
 
-<td><a href="//youtube.com/channel/UCmm7E2ZjTeaP2ycIAIttcJQ" target="_blank" title="YouTube"><i class="fa fa-youtube"></i></a></td>
+
+
+<td><a href="//youtube.com/channel/UCmm7E2ZjTeaP2ycIAIttcJQ" target="_blank" title="YouTube [LT]"><i class="fa fa-youtube"></i></a></td>
+
+
+
 
 
 
@@ -288,6 +298,8 @@
 
 
 
+<td><a href="//twitter.com/GegznaV" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
 
 
 
@@ -313,18 +325,19 @@
 
    	
     	<aside id="sidebar">
-    <div class="widget-wrap">
-  <div class="widget">
-    <ul id="search-form-wrap">
-      <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
-          <input type="search" name="q" class="search-form-input" placeholder="Ieškoti">
-          <button type="submit" class="search-form-submit">
-          </button>
-          <input type="hidden" name="sitesearch" value="/lt" />
-      </form>
-     </ul>
-  </div>
-</div>
+    <div class="widget-wrap"> <div class="widget">
+  <ul id="search-form-wrap">
+  
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+		  <input type="search" name="q" class="search-form-input" placeholder="Ieškoti">
+		  <button type="submit" class="search-form-submit"></button>
+		  <input type="hidden" name="sitesearch" value="https://datafortress.github.io" />
+		</form> 
+
+  
+  </ul>
+</div> </div>
+
 
     
 <div class="widget-wrap">
@@ -496,15 +509,14 @@
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2018
-      Vilmantas Gėgžna
+      &copy; 2018, Vilmantas Gėgžna
     </div>
   </div>
 </footer>
 
 <script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script src="/js/hide-top-navbar.js"></script>
 <script src="/js/script.js"></script>
-<script src="/js/hide-header.js"></script>
 
 
 
@@ -516,12 +528,12 @@
 
 <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
 
-<script src="/js/hljs-lang-r.js" ></script>
+<script src="/js/highlight-r-code.js" ></script>
 
 
 <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
 
-<script src="/js/hljs-lang-r.js" ></script>
+<script src="/js/highlight-r-code.js" ></script>
 
 
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>

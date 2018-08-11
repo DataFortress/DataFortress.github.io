@@ -5,7 +5,8 @@
     <link>/lt/level/</link>
     <description>Recent content in Level on Duomenų tvirtovė</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Vilmantas Gėgžna</copyright>
+    <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
+    <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     
         <atom:link href="/lt/level/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +15,7 @@
       <title>Pradedantiesiems</title>
       <link>/lt/level/pradedantiesiems/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
-      
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
       <guid>/lt/level/pradedantiesiems/</guid>
       <description></description>
     </item>

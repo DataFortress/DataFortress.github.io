@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Duomenų tvirtovė</title>
+    <title>Duomenų analizės ir vizualizavimo programa „R“ on Duomenų tvirtovė</title>
     <link>/lt/tags/r/</link>
-    <description>Recent content in R on Duomenų tvirtovė</description>
+    <description>Recent content in Duomenų analizės ir vizualizavimo programa „R“ on Duomenų tvirtovė</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Vilmantas Gėgžna</copyright>
+    <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
+    <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/lt/tags/r/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +16,7 @@
       <title>„Word“ lentelių kūrimas naudojant „R“</title>
       <link>/lt/2018/06/15/word-tables-with-r/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
-      
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
       <guid>/lt/2018/06/15/word-tables-with-r/</guid>
       <description>&lt;link href=&#34;/rmarkdown-libs/tabwid/tabwid.css&#34; rel=&#34;stylesheet&#34; /&gt;
 &lt;script src=&#34;/rmarkdown-libs/tabwid/tabwid.js&#34;&gt;&lt;/script&gt;

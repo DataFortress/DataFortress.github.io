@@ -5,7 +5,8 @@
     <link>/level/</link>
     <description>Recent content in Level on Data Fortress</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Vilmantas Gėgžna</copyright>
+    <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
+    <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/level/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +16,7 @@
       <title>For Begginers</title>
       <link>/level/for-begginers/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
-      
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
       <guid>/level/for-begginers/</guid>
       <description></description>
     </item>
