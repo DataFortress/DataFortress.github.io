@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Level on Data Fortress</title>
+    <link>/en/level/</link>
+    <description>Recent content in Level on Data Fortress</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
+    <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
+    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="/en/level/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>For Begginers</title>
+      <link>/en/level/for-begginers/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
+      <guid>/en/level/for-begginers/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

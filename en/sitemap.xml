@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2018/06/15/word-tables-with-r/</loc>
+    <loc>/en/2018/06/15/word-tables-with-r/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -13,12 +13,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2018/06/15/word-tables-with-r/"
+                href="/en/2018/06/15/word-tables-with-r/"
                 />
   </url>
   
   <url>
-    <loc>/archive/</loc>
+    <loc>/en/archive/</loc>
     <lastmod>2017-05-19T21:49:20+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -28,12 +28,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/archive/"
+                href="/en/archive/"
                 />
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/en/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -43,12 +43,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/en/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -58,18 +58,18 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="/en/"
                 />
   </url>
   
   <url>
-    <loc>/level/for-begginers/</loc>
+    <loc>/en/level/for-begginers/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/level/</loc>
+    <loc>/en/level/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
@@ -80,12 +80,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/level/"
+                href="/en/level/"
                 />
   </url>
   
   <url>
-    <loc>/tags/ms-word/</loc>
+    <loc>/en/tags/ms-word/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
@@ -96,24 +96,24 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/ms-word/"
+                href="/en/tags/ms-word/"
                 />
   </url>
   
   <url>
-    <loc>/tags/package-flextable/</loc>
+    <loc>/en/tags/package-flextable/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/package-officer/</loc>
+    <loc>/en/tags/package-officer/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/en/post/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
@@ -124,12 +124,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/post/"
+                href="/en/post/"
                 />
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>/en/tags/r/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -139,12 +139,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/r/"
+                href="/en/tags/r/"
                 />
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>/en/categories/r/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
@@ -155,12 +155,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/r/"
+                href="/en/categories/r/"
                 />
   </url>
   
   <url>
-    <loc>/stickies/</loc>
+    <loc>/en/stickies/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -170,12 +170,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/stickies/"
+                href="/en/stickies/"
                 />
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/en/tags/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
@@ -186,7 +186,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="/en/tags/"
                 />
   </url>
   
