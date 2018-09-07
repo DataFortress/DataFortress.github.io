@@ -93,34 +93,6 @@
   </url>
   
   <url>
-    <loc>/lt/tags/ms-word/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/tags/ms-word/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="lt"
-                href="/lt/tags/ms-word/"
-                />
-  </url>
-  
-  <url>
-    <loc>/lt/tags/paketas-flextable/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/lt/tags/paketas-officer/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/lt/post/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -137,9 +109,33 @@
   </url>
   
   <url>
-    <loc>/lt/level/pradedantiesiems/</loc>
+    <loc>/lt/tags/ms-word/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/ms-word/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="/lt/tags/ms-word/"
+                />
+  </url>
+  
+  <url>
+    <loc>/lt/tags/paketas-flextable/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/package-flextable/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="/lt/tags/paketas-flextable/"
+                />
   </url>
   
   <url>
@@ -155,6 +151,21 @@
                 rel="alternate"
                 hreflang="lt"
                 href="/lt/categories/r/"
+                />
+  </url>
+  
+  <url>
+    <loc>/lt/tags/paketas-officer/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/package-officer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="/lt/tags/paketas-officer/"
                 />
   </url>
   
@@ -186,6 +197,21 @@
                 rel="alternate"
                 hreflang="lt"
                 href="/lt/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/lt/level/pradedantiesiems/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/level/for-beginners/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="/lt/level/pradedantiesiems/"
                 />
   </url>
   

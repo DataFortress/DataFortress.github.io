@@ -33,6 +33,21 @@
   </url>
   
   <url>
+    <loc>/en/level/for-beginners/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="/lt/level/pradedantiesiems/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/level/for-beginners/"
+                />
+  </url>
+  
+  <url>
     <loc>/en/categories/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -63,12 +78,6 @@
   </url>
   
   <url>
-    <loc>/en/level/for-begginers/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/en/level/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -85,34 +94,6 @@
   </url>
   
   <url>
-    <loc>/en/tags/ms-word/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="lt"
-                href="/lt/tags/ms-word/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/tags/ms-word/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/tags/package-flextable/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/en/tags/package-officer/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/en/post/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -125,6 +106,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/en/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/tags/ms-word/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="/lt/tags/ms-word/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/ms-word/"
                 />
   </url>
   
@@ -156,6 +152,36 @@
                 rel="alternate"
                 hreflang="en"
                 href="/en/categories/r/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/tags/package-flextable/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="/lt/tags/paketas-flextable/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/package-flextable/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/tags/package-officer/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="/lt/tags/paketas-officer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/package-officer/"
                 />
   </url>
   
