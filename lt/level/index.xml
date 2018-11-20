@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Level on Duomenų tvirtovė</title>
-    <link>/lt/level/</link>
+    <link>https://datafortress.github.io/lt/level/</link>
     <description>Recent content in Level on Duomenų tvirtovė</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
     <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     
-        <atom:link href="/lt/level/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://datafortress.github.io/lt/level/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Temos tinkamos pradedantiesiems</title>
-      <link>/lt/level/pradedantiesiems/</link>
+      <link>https://datafortress.github.io/lt/level/pradedantiesiems/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
-      <guid>/lt/level/pradedantiesiems/</guid>
+      <guid>https://datafortress.github.io/lt/level/pradedantiesiems/</guid>
       <description></description>
     </item>
     

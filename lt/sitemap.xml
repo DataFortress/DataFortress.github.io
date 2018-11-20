@@ -3,215 +3,271 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/lt/2018/06/word-tables-with-r/</loc>
+    <loc>https://datafortress.github.io/lt/2018/06/word-tables-with-r/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/2018/06/word-tables-with-r/"
+                href="https://datafortress.github.io/en/2018/06/word-tables-with-r/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/lt/2018/06/word-tables-with-r/"
+                href="https://datafortress.github.io/lt/2018/06/word-tables-with-r/"
                 />
   </url>
   
   <url>
-    <loc>/lt/archive/</loc>
+    <loc>https://datafortress.github.io/lt/archive/</loc>
     <lastmod>2017-05-19T21:49:20+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/archive/"
+                href="https://datafortress.github.io/en/archive/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/lt/archive/"
+                href="https://datafortress.github.io/lt/archive/"
                 />
   </url>
   
   <url>
-    <loc>/lt/categories/</loc>
+    <loc>https://datafortress.github.io/lt/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="https://datafortress.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/lt/categories/"
+                href="https://datafortress.github.io/lt/categories/"
                 />
   </url>
   
   <url>
-    <loc>/lt/tags/r/</loc>
+    <loc>https://datafortress.github.io/lt/tags/r/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/r/"
+                href="https://datafortress.github.io/en/tags/r/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/lt/tags/r/"
+                href="https://datafortress.github.io/lt/tags/r/"
                 />
   </url>
   
   <url>
-    <loc>/lt/</loc>
+    <loc>https://datafortress.github.io/lt/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="https://datafortress.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/lt/"
+                href="https://datafortress.github.io/lt/"
                 />
   </url>
   
   <url>
-    <loc>/lt/level/</loc>
+    <loc>https://datafortress.github.io/lt/level/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/level/"
+                href="https://datafortress.github.io/en/level/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/lt/level/"
+                href="https://datafortress.github.io/lt/level/"
                 />
   </url>
   
   <url>
-    <loc>/lt/post/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="lt"
-                href="/lt/post/"
-                />
-  </url>
-  
-  <url>
-    <loc>/lt/tags/ms-word/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/tags/ms-word/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="lt"
-                href="/lt/tags/ms-word/"
-                />
-  </url>
-  
-  <url>
-    <loc>/lt/tags/paketas-flextable/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/tags/package-flextable/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="lt"
-                href="/lt/tags/paketas-flextable/"
-                />
-  </url>
-  
-  <url>
-    <loc>/lt/categories/r/</loc>
+    <loc>https://datafortress.github.io/lt/post/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/r/"
+                href="https://datafortress.github.io/en/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/lt/categories/r/"
+                href="https://datafortress.github.io/lt/post/"
                 />
   </url>
   
   <url>
-    <loc>/lt/tags/paketas-officer/</loc>
+    <loc>https://datafortress.github.io/lt/tags/ms-excel/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://datafortress.github.io/en/tags/ms-excel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="https://datafortress.github.io/lt/tags/ms-excel/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://datafortress.github.io/lt/tags/ms-powerpoint/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://datafortress.github.io/en/tags/ms-powerpoint/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="https://datafortress.github.io/lt/tags/ms-powerpoint/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://datafortress.github.io/lt/tags/ms-word/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/package-officer/"
+                href="https://datafortress.github.io/en/tags/ms-word/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/lt/tags/paketas-officer/"
+                href="https://datafortress.github.io/lt/tags/ms-word/"
                 />
   </url>
   
   <url>
-    <loc>/lt/stickies/</loc>
+    <loc>https://datafortress.github.io/lt/tags/paketas-flextable/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://datafortress.github.io/en/tags/package-flextable/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="https://datafortress.github.io/lt/tags/paketas-flextable/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://datafortress.github.io/lt/tags/paketas-ggplot2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://datafortress.github.io/en/tags/package-rvg/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="https://datafortress.github.io/lt/tags/paketas-ggplot2/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://datafortress.github.io/lt/categories/r/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/stickies/"
+                href="https://datafortress.github.io/en/categories/r/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/lt/stickies/"
+                href="https://datafortress.github.io/lt/categories/r/"
                 />
   </url>
   
   <url>
-    <loc>/lt/tags/</loc>
+    <loc>https://datafortress.github.io/lt/tags/paketas-officer/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://datafortress.github.io/en/tags/package-officer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="https://datafortress.github.io/lt/tags/paketas-officer/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://datafortress.github.io/lt/tags/paketas-rvg/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://datafortress.github.io/en/tags/package-officer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="https://datafortress.github.io/lt/tags/paketas-rvg/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://datafortress.github.io/lt/stickies/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://datafortress.github.io/en/stickies/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="lt"
+                href="https://datafortress.github.io/lt/stickies/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://datafortress.github.io/lt/tags/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="https://datafortress.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/lt/tags/"
+                href="https://datafortress.github.io/lt/tags/"
                 />
   </url>
   
   <url>
-    <loc>/lt/level/pradedantiesiems/</loc>
+    <loc>https://datafortress.github.io/lt/level/pradedantiesiems/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/level/for-beginners/"
+                href="https://datafortress.github.io/en/level/for-beginners/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lt"
-                href="/lt/level/pradedantiesiems/"
+                href="https://datafortress.github.io/lt/level/pradedantiesiems/"
                 />
   </url>
   

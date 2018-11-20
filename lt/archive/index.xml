@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archyvas on Duomenų tvirtovė</title>
-    <link>/lt/archive/</link>
+    <link>https://datafortress.github.io/lt/archive/</link>
     <description>Recent content in Archyvas on Duomenų tvirtovė</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
     <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     <lastBuildDate>Fri, 19 May 2017 21:49:20 +0200</lastBuildDate>
     
-        <atom:link href="/lt/archive/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://datafortress.github.io/lt/archive/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

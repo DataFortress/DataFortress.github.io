@@ -2,23 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Data Fortress</title>
-    <link>/en/post/</link>
+    <link>https://datafortress.github.io/en/post/</link>
     <description>Recent content in Posts on Data Fortress</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
     <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/en/post/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://datafortress.github.io/en/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Save R Data Frames as Word Tables</title>
-      <link>/en/2018/06/word-tables-with-r/</link>
+      <link>https://datafortress.github.io/en/2018/06/word-tables-with-r/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
-      <guid>/en/2018/06/word-tables-with-r/</guid>
-      <description>&lt;div id=&#34;summary&#34; class=&#34;section level1&#34;&gt;
+      <guid>https://datafortress.github.io/en/2018/06/word-tables-with-r/</guid>
+      <description>
+
+
+&lt;div id=&#34;summary&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Summary&lt;/h1&gt;
 &lt;p&gt;In this blog post, I demonstrate how to save an R &lt;code&gt;data.frame&lt;/code&gt; as a Microsoft Word table using R packages
 &lt;a href=&#34;https://davidgohel.github.io/flextable/&#34;&gt;&lt;strong&gt;&lt;em&gt;flextable&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://davidgohel.github.io/officer/&#34;&gt;&lt;strong&gt;&lt;em&gt;officer&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;. Please, find the R code below.&lt;/p&gt;

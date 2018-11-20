@@ -2,49 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Duomenų tvirtovė</title>
-    <link>/lt/tags/</link>
+    <link>https://datafortress.github.io/lt/tags/</link>
     <description>Recent content in Tags on Duomenų tvirtovė</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
     <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/lt/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://datafortress.github.io/lt/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>R paketas „officer“</title>
-      <link>/lt/tags/paketas-officer/</link>
+      <link>https://datafortress.github.io/lt/tags/paketas-officer/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
-      <guid>/lt/tags/paketas-officer/</guid>
+      <guid>https://datafortress.github.io/lt/tags/paketas-officer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programos „R“ paketas „flextable“</title>
-      <link>/lt/tags/paketas-flextable/</link>
+      <link>https://datafortress.github.io/lt/tags/paketas-flextable/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
-      <guid>/lt/tags/paketas-flextable/</guid>
+      <guid>https://datafortress.github.io/lt/tags/paketas-flextable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programa „Microsoft Word“</title>
-      <link>/lt/tags/ms-word/</link>
+      <link>https://datafortress.github.io/lt/tags/ms-word/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
-      <guid>/lt/tags/ms-word/</guid>
+      <guid>https://datafortress.github.io/lt/tags/ms-word/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Duomenų analizės ir vizualizavimo programa „R“</title>
-      <link>/lt/tags/r/</link>
+      <link>https://datafortress.github.io/lt/tags/r/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
-      <guid>/lt/tags/r/</guid>
+      <guid>https://datafortress.github.io/lt/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R paketas „officer“</title>
+      <link>https://datafortress.github.io/lt/tags/paketas-rvg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
+      <guid>https://datafortress.github.io/lt/tags/paketas-rvg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programos „R“ paketas „rvg“</title>
+      <link>https://datafortress.github.io/lt/tags/paketas-ggplot2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
+      <guid>https://datafortress.github.io/lt/tags/paketas-ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programa „Microsoft PowerPoint“</title>
+      <link>https://datafortress.github.io/lt/tags/ms-powerpoint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
+      <guid>https://datafortress.github.io/lt/tags/ms-powerpoint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programa „Microsoft Excel“</title>
+      <link>https://datafortress.github.io/lt/tags/ms-excel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
+      <guid>https://datafortress.github.io/lt/tags/ms-excel/</guid>
       <description></description>
     </item>
     

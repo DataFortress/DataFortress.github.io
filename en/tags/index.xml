@@ -2,49 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Data Fortress</title>
-    <link>/en/tags/</link>
+    <link>https://datafortress.github.io/en/tags/</link>
     <description>Recent content in Tags on Data Fortress</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
     <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/en/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://datafortress.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>R package &#34;officer&#34;</title>
-      <link>/en/tags/package-officer/</link>
+      <link>https://datafortress.github.io/en/tags/package-officer/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
-      <guid>/en/tags/package-officer/</guid>
+      <guid>https://datafortress.github.io/en/tags/package-officer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R package &#34;flextable&#34;</title>
-      <link>/en/tags/package-flextable/</link>
+      <link>https://datafortress.github.io/en/tags/package-flextable/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
-      <guid>/en/tags/package-flextable/</guid>
+      <guid>https://datafortress.github.io/en/tags/package-flextable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Program R for Statistical Computing and Data Visualization</title>
-      <link>/en/tags/r/</link>
+      <link>https://datafortress.github.io/en/tags/r/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
-      <guid>/en/tags/r/</guid>
+      <guid>https://datafortress.github.io/en/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Program &#34;Microsoft Word&#34;</title>
-      <link>/en/tags/ms-word/</link>
+      <link>https://datafortress.github.io/en/tags/ms-word/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
-      <guid>/en/tags/ms-word/</guid>
+      <guid>https://datafortress.github.io/en/tags/ms-word/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R package &#34;rvg&#34;</title>
+      <link>https://datafortress.github.io/en/tags/package-rvg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
+      <guid>https://datafortress.github.io/en/tags/package-rvg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R package &#34;ggplot2&#34;</title>
+      <link>https://datafortress.github.io/en/tags/package-ggplot2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
+      <guid>https://datafortress.github.io/en/tags/package-ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Program &#34;Microsoft PowerPoint&#34;</title>
+      <link>https://datafortress.github.io/en/tags/ms-powerpoint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
+      <guid>https://datafortress.github.io/en/tags/ms-powerpoint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Program &#34;Microsoft Excel&#34;</title>
+      <link>https://datafortress.github.io/en/tags/ms-excel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>GegznaV@gmail.com (Vilmantas Gėgžna)</author>
+      <guid>https://datafortress.github.io/en/tags/ms-excel/</guid>
       <description></description>
     </item>
     

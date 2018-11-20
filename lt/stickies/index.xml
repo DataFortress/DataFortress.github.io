@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stickies on Duomenų tvirtovė</title>
-    <link>/lt/stickies/</link>
+    <link>https://datafortress.github.io/lt/stickies/</link>
     <description>Recent content in Stickies on Duomenų tvirtovė</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>GegznaV@gmail.com (Vilmantas Gėgžna)</managingEditor>
     <webMaster>GegznaV@gmail.com (Vilmantas Gėgžna)</webMaster>
     
-        <atom:link href="/lt/stickies/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://datafortress.github.io/lt/stickies/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
