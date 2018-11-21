@@ -64,8 +64,8 @@ Sys.setlocale(locale = &amp;quot;lt_LT.utf8&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Jei tiksliai nežinote, kuris formatas tinka jūsų sistemai, įrašykite &lt;code class=&#34;r&#34;&gt;Sys.getlocale()&lt;/code&gt; ir pagal pavyzdį pasirinkite savo kompiuteriui tinkamą lokalės nustatymo būdą.
 Daugiau apie lokalių nustatymą galite skaityti „R“ &lt;a href=&#34;https://stat.ethz.ch/R-manual/R-patched/library/base/html/locales.html&#34; target=&#34;_blank&#34;&gt;dokumentacijoje&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;c.-duomenys&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;C. Duomenys&lt;/h1&gt;
+&lt;div id=&#34;c.-uzsikraukime-duomenis&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;C. Užsikraukime duomenis&lt;/h1&gt;
 &lt;p&gt;Laikas įsikelti duomenis.
 Iliustracijai naudosime duomenų lentelę „PlantGrowth“ iš paketo &lt;strong&gt;&lt;em&gt;datasets&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Duomenų įkėlimas
@@ -89,8 +89,8 @@ glimpse(PlantGrowth)
 ## $ group  &amp;lt;fct&amp;gt; ctrl, ctrl, ctrl, ctrl, ctrl, ctrl, ctrl, ctrl, ctrl, c...&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Čia matome eilučių („Observations“) ir stulpelių („Variables“) skaičių, stulpelių pavadinimus (jie rašomi po dolerio ženklo „$“), stulpeliuose esančių duomenų klases (tiksliau, sutrumpintus jų pavadinimus trikampiuose skliaustuose) bei kelias pirmąsias reikšmes.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;d.-suvestines-kurimas&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;D. Suvestinės kūrimas&lt;/h1&gt;
+&lt;div id=&#34;d.-sudarykime-suvestine&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;D. Sudarykime suvestinę&lt;/h1&gt;
 &lt;p&gt;Toliau sudarysime duomenų suvestinę, kuri bus &lt;code&gt;data.frame&lt;/code&gt; klasės lentelė.
 Šiame pavyzdyje kiekvienai iš grupių apskaičiuosime grupės dydį, svorio (kintamojo &lt;code class=&#34;r&#34;&gt;weight&lt;/code&gt;) vidurkį ir standartinį nuokrypį naudodami paketo &lt;strong&gt;&lt;em&gt;dplyr&lt;/em&gt;&lt;/strong&gt; funkcijas &lt;code class=&#34;r&#34;&gt;group_by()&lt;/code&gt; ir &lt;code class=&#34;r&#34;&gt;summarize()&lt;/code&gt;.
 Funkcija &lt;code class=&#34;r&#34;&gt;rename()&lt;/code&gt; pervardinsime stulpelį &lt;code&gt;group&lt;/code&gt; į &lt;code&gt;Grupės pavadinimas&lt;/code&gt; – taip visi stulpeliai turės lietuviškus pavadinimus.&lt;/p&gt;
@@ -117,8 +117,8 @@ class(suvestine)
 ## [1] &amp;quot;tbl_df&amp;quot;     &amp;quot;tbl&amp;quot;        &amp;quot;data.frame&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Jei turite suvestinę, kuri nėra &lt;code&gt;data.frame&lt;/code&gt;, tada toliau aprašytas būdas neveiks.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;e.-lenteles-pavertimas-i-issaugojimui-tinkama-forma&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;E. Lentelės pavertimas į išsaugojimui tinkamą formą&lt;/h1&gt;
+&lt;div id=&#34;e.-paverskime-lentele-i-issaugojimui-tinkama-formata&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;E. Paverskime lentelę į išsaugojimui tinkamą formatą&lt;/h1&gt;
 &lt;p&gt;Prieš saugant į „Word“, lentelę reikia paruošti.
 Šiam tikslui naudojama funkcija &lt;code class=&#34;r&#34;&gt;regulartable()&lt;/code&gt; („įprasta lentelė“) iš paketo &lt;strong&gt;&lt;em&gt;flextable&lt;/em&gt;&lt;/strong&gt;.
 Papildomai galima naudoti funkciją &lt;code class=&#34;r&#34;&gt;autofit()&lt;/code&gt;, kuri optimizuoja lentelės dydį (eilučių aukštį ir stulpelių plotį).&lt;/p&gt;
